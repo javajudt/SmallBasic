@@ -1,0 +1,160 @@
+GraphicsWindow.Width = "1425"
+GraphicsWindow.Height = "825"
+GraphicsWindow.Top = "0"
+GraphicsWindow.Left = "0"
+GraphicsWindow.BackgroundColor = "green"
+GraphicsWindow.FontSize = "36"
+GraphicsWindow.BrushColor = "limegreen"
+GraphicsWindow.PenColor = "NavyBlue"
+GraphicsWindow.Title = "Bhaskara's First Pythagorean Theorem Proof - Project by Jordan Judt, David M***, and Jonathan R*** - Written by Jordan Judt with Microsoft Small Basic"
+GraphicsWindow.DrawText(350, 700, "Bhaskara's First Pythagorean Theorem Proof")
+GraphicsWindow.FontSize = "20"
+GraphicsWindow.BrushColor = "greenyellow"
+GraphicsWindow.DrawText(465, 745, "Project by Jordan Judt, David M***, and Jonathan R***")
+GraphicsWindow.FontSize = "15"
+GraphicsWindow.BrushColor = "palegreen"
+GraphicsWindow.DrawText(610, 775, "Program written by Jordan Judt")
+GraphicsWindow.BrushColor = "Purple"
+
+t1 = Shapes.AddTriangle(713, 400, 713, 600, 800, 600)
+t2 = Shapes.AddTriangle(713, 400, 713, 600, 800, 600)
+t3 = Shapes.AddTriangle(713, 400, 713, 600, 800, 600)
+t4 = Shapes.AddTriangle(713, 400, 713, 600, 800, 600)
+
+Program.Delay(3000)
+Shapes.Animate(t2, 0, -200, 500)
+Shapes.Animate(t3, 87, 0, 500)
+Shapes.Animate(t4, -87, 0, 500)
+Program.Delay(2000)
+Shapes.Rotate(t1, 90)
+Shapes.Move(t1, 497, -213)
+Program.Delay(500)
+Shapes.Rotate(t3, 180)
+Shapes.Move(t3, 510, 285)
+Program.Delay(500)
+Shapes.Rotate(t4, 270)
+Shapes.Move(t4, 13, 298)
+Program.Delay(500)
+
+GraphicsWindow.BrushColor = "beige"
+GraphicsWindow.FontSize = "12"
+a1 = Shapes.AddText("a")
+Shapes.Move(a1, 555, 290)
+Program.Delay(500)
+b1 = Shapes.AddText("b")
+Shapes.Move(b1, 580, 375)
+Program.Delay(500)
+c1 = Shapes.AddText("c")
+Shapes.Move(c1, 525, 350)
+
+GraphicsWindow.BrushColor = "black"
+GraphicsWindow.FontSize = "17"
+Program.Delay(500)
+tr1 = Shapes.AddText("1")
+Shapes.Move(tr1, 620, 250)
+Program.Delay(500)
+tr2 = Shapes.AddText("2")
+Shapes.Move(tr2, 730, 300)
+Program.Delay(500)
+tr3 = Shapes.AddText("3")
+Shapes.Move(tr3, 670, 420)
+Program.Delay(500)
+tr4 = Shapes.AddText("4")
+Shapes.Move(tr4, 560, 335)
+
+Program.Delay(1700)
+Shapes.Animate(t1, 100, -325, 500)
+Program.Delay(100)
+Shapes.Animate(t2, -397, -312, 500)
+Program.Delay(100)
+Shapes.Animate(t3, 113, 173, 500)
+Program.Delay(100)
+Shapes.Animate(t4, -384, 186, 500)
+Program.Delay(100)
+Shapes.Animate(a1, 158, 178, 500)
+Program.Delay(100)
+Shapes.Animate(b1, 183, 263, 500)
+Program.Delay(100)
+Shapes.Animate(c1, 128, 238, 500)
+Program.Delay(100)
+Shapes.Animate(tr1, 223, 138, 500)
+Program.Delay(100)
+Shapes.Animate(tr2, 333, 188, 500)
+Program.Delay(100)
+Shapes.Animate(tr3, 273, 308, 500)
+Program.Delay(100)
+Shapes.Animate(tr4, 163, 223, 500)
+
+Program.Delay(1000)
+GraphicsWindow.FontSize = "17"
+GraphicsWindow.BrushColor = "gold"
+GraphicsWindow.DrawText(370, 80, "Given:")
+GraphicsWindow.DrawText(390, 100, "▲1≅▲2≅▲3≅▲4")
+GraphicsWindow.DrawText(390, 120, "Triangles 1, 2, 3, and 4 are right triangles")
+GraphicsWindow.BrushColor = "orangered"
+GraphicsWindow.FontSize = "18"
+GraphicsWindow.DrawText(410, 160, "Prove:")
+GraphicsWindow.DrawText(430, 180, "a² + b² = c²")
+
+'PROOF
+Program.Delay(1000)
+GraphicsWindow.BrushColor = "darkturquoise"
+GraphicsWindow.FontSize = "22"
+GraphicsWindow.DrawText(855, 100, "Statements")
+GraphicsWindow.DrawText(1085, 100, "Reasons")
+GraphicsWindow.PenWidth = "5"
+GraphicsWindow.PenColor = "steelblue"
+GraphicsWindow.DrawLine(1015, 90, 1015, 505)
+GraphicsWindow.DrawLine(820, 135, 1235, 135)
+Program.Delay(1000)
+
+'STEP 1 PROOF
+GraphicsWindow.FontSize = "15"
+GraphicsWindow.BrushColor = "gold"
+GraphicsWindow.DrawText(823, 140, "1. ▲1≅▲2≅▲3≅▲4")
+GraphicsWindow.DrawText(827, 155, "▲1, ▲2, ▲3, and ▲4")
+GraphicsWindow.DrawText(828, 170, "are right triangles")
+GraphicsWindow.DrawText(1025, 140, "1. Given")
+Program.Delay(3000)
+
+'STEP 2 PROOF
+GraphicsWindow.BrushColor = "LightCyan"
+GraphicsWindow.DrawText(823, 195, "2. A = s²")
+GraphicsWindow.DrawText(827, 210, "A = c²")
+GraphicsWindow.DrawText(1025, 195, "2. Area of square postulate")
+Program.Delay(3000)
+
+'STEP 3 PROOF
+GraphicsWindow.BrushColor = "cyan"
+GraphicsWindow.DrawText(823, 235, "3. A = ½bh")
+GraphicsWindow.DrawText(827, 250, "A = ½ab")
+GraphicsWindow.DrawText(1025, 235, "3. Area of triangle postulate")
+Program.Delay(3000)
+
+'STEP 4 PROOF
+GraphicsWindow.BrushColor = "lightcyan"
+GraphicsWindow.DrawText(823, 275, "4. A = s²")
+GraphicsWindow.DrawText(827, 290, "A = (b-a)²")
+GraphicsWindow.DrawText(1025, 275, "4. Area of square postulate")
+Program.Delay(3000)
+
+'STEP 5 PROOF
+GraphicsWindow.BrushColor = "cyan"
+GraphicsWindow.DrawText(823, 315, "5. A = ½ab + ½ab +")
+GraphicsWindow.DrawText(827, 330, "½ab + ½ab + (b-a)²")
+GraphicsWindow.DrawText(1025, 315, "5. Area addition postulate")
+Program.Delay(3000)
+
+'STEP 6 PROOF
+GraphicsWindow.BrushColor = "lightcyan"
+GraphicsWindow.DrawText(823, 355, "6. A = 4(½)ab + (b-a)²")
+GraphicsWindow.DrawText(827, 370, "A = 2ab + b² - 2ab + a²")
+GraphicsWindow.DrawText(827, 385, "A = a² + b²")
+GraphicsWindow.DrawText(1025, 355, "6. Simplify")
+Program.Delay(3000)
+
+'STEP 7 PROOF
+GraphicsWindow.FontSize = "20"
+GraphicsWindow.BrushColor = "orangered"
+GraphicsWindow.DrawText(823, 415, "7. a² + b² = c²")
+GraphicsWindow.DrawText(1025, 415, "7. Transitive")
